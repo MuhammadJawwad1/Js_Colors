@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color_JS</title>
+</head>
+<body>
+    <script>
+       var color = ['red','green','blue']
+       document.write(color + '<br>')
+       color.unshift(prompt('what color want you to add at start'))
+       document.write('(a)'+ color + '<strong>'+' you add color at start' + '</strong>' + '<br>'  )
+       color.push(prompt('what color want you to add at end'))
+       document.write('(b)'+ color + '<strong>'+' you add color at end' + '</strong>' + '<br>'  )
+       color.unshift('purple','orange')
+       document.write('(c)'+ color +'<strong>'+' I add 2 color at start' + '</strong>' + '<br>'  )
+       color.shift()
+       document.write('(d)'+ color +'<strong>'+' I delete 1st color' + '</strong>' + '<br>')
+       color.pop()
+       document.write('(e)'+ color +'<strong>'+' I delete last color' + '</strong>' + '<br>') 
+       color.splice(prompt('which index you want to add color'),1,prompt('what color you want to add'))
+       document.write('(f)'+ color +'<strong>'+' Your color at your given index number' + '</strong>' + '<br>') 
+       color.splice(prompt('your index number of color '),prompt('how many color you want to delete '))
+       document.write('(g)'+ color +'<strong>'+' Your delete count from your index given' + '</strong>' + '<br>') 
+
+        
+    </script>
+</body>
+</html>
